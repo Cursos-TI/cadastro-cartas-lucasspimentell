@@ -8,22 +8,26 @@ int main() {
   
   // Área para definição das variáveis para armazenar as propriedades das cidades
       int carta1;
-      char estado1;
-      char codigo1[5];
-      char nomeCidade1[20];
-      float populacao1;
-      float area1;
-      float pib1;
-      int pontosTuristicos1;
+char estado1;
+char codigo1[5];
+char nomeCidade1[20];
+float populacao1;
+float area1;
+float pib1;
+int pontosTuristicos1;
+double densidadePopulacional1;
+double pibPerCapita1;
 
-      int carta2;
-      char estado2;
-      char codigo2[5];
-      char nomeCidade2[20];
-      float populacao2;
-      float area2;
-      float pib2;
-      int pontosTuristicos2;
+int carta2;
+char estado2;
+char codigo2[5];
+char nomeCidade2[20];
+float populacao2;
+float area2;
+float pib2;
+int pontosTuristicos2;
+double densidadePopulacional2;
+double pibPerCapita2;
 
   // Área para entrada de dados
 
@@ -79,8 +83,7 @@ int main() {
       scanf("%d",&pontosTuristicos2);
 
   // Área para exibição dos dados da cidade
-    printf("\n Carta:%d \n Estado:%c \n Código: %s \n Nome da cidade: 1%s \n População: %f \n Área: %.2f Km² \n PIB: %.2f Reais\n Número de pontos Turísticos: %d \n",carta1,estado1,codigo1,nomeCidade1,populacao1,area1,pib1,pontosTuristicos1);
+    printf("\n Carta:%d \n Estado:%c \n Código: %s \n Nome da cidade: 1%s \n População: %.2f \n Área: %.2f Km² \n PIB: %.2f Reais\n Número de pontos Turísticos: %d \n Densidade populacional: %.2f hab/km²\n PIB per Capita: %.2f reais\n",carta1,estado1,codigo1,nomeCidade1,populacao1,area1,pib1,pontosTuristicos1,densidadePopulacional1 = populacao1/area1,pibPerCapita1 = pib1/populacao1);
 
-    printf("\n Carta:%d \n Estado:%c \n Código: %s \n Nome da cidade: 1%s \n População: %f \n Área: %.2f Km² \n PIB: %.2f Reais\n Número de pontos Turísticos: %d \n",carta2,estado2,codigo2,nomeCidade2,populacao2,area2,pib2,pontosTuristicos2);
-return 0;
+    printf("\n Carta:%d \n Estado:%c \n Código: %s \n Nome da cidade: 1%s \n População: %.2f \n Área: %.2f Km² \n PIB: %.2f Reais\n Número de pontos Turísticos: %d \n Densidade populacional: %.2f hab/km²\n PIB per Capita: %.2f reais\n",carta2,estado2,codigo2,nomeCidade2,populacao2,area2,pib2,pontosTuristicos2,densidadePopulacional2 = populacao2/area2,pibPerCapita2 = pib1/populacao1);
 } 
